@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vn.edu.eiu.qlnhanvien.MainActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Chuong trinh quan ly nhan vien"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/textView1"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thong tin nhan vien"
+            android:gravity="center"
+            android:background="@android:color/holo_green_dark"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textViewNameCustomer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ten nhan vien"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:id="@+id/edt_tenNhanVien"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:inputType="textPersonName"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewnameRoom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ten phong ban" />
+
+        <EditText
+            android:id="@+id/edt_tenPhongBan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textViewDayWork"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="so ngay lam viec"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:id="@+id/edt_ngayLamViec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="0"
+            android:ems="10"
+            android:inputType="number"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Nhan Vien Chinh Thuc"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Luong thang: "
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/textViewLuong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="2"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btn_tinhLuong"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/holo_blue_bright"
+            android:layout_weight="1"
+            android:text="Tinh Luong"/>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/holo_blue_bright"
+            android:layout_weight="1"
+            android:text="Tiep"/>
+
+        <Button
+            android:id="@+id/btn_thongke"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/holo_blue_bright"
+            android:layout_weight="1"
+            android:text="Thong Ke"/>
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="thong tin thong ke "
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textViewTongNhanVienTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tong so nhan vien "
+            android:layout_weight="3"
+            />
+        <TextView
+            android:id="@+id/textViewTongNhanVien"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="2"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textViewTongNhanVienChinhThucTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tong so nhan vien "
+            android:layout_weight="3"
+            />
+        <TextView
+            android:id="@+id/textViewTongNhanVienChinhThuc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="2"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textViewTongChiLuongTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tong Chi luong "
+            android:layout_weight="3"
+            />
+        <TextView
+            android:id="@+id/textViewTongChiLuong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="2"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textViewNhanVienLamNhieuNgayNhatTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="nhan vien lam nhieu ngay nhat"
+            android:layout_weight="3"
+            />
+        <TextView
+            android:id="@+id/textViewNhanVienlamNhieuNgayNhat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="2"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textViewNhanVienLuongCaoNhatTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="nhan vien luong cao nhat"
+            android:layout_weight="3"
+            />
+        <TextView
+            android:id="@+id/textViewNhanVienLuongCaoNhat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="2"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_purple"
+            android:layout_gravity="end"
+            android:layout_marginLeft="50dp"
+            app:srcCompat="@android:drawable/ic_lock_power_off" />
+
+    </TableRow>
+
+
+
+
+
+</TableLayout>
